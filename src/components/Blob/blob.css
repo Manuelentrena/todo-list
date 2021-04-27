@@ -1,0 +1,21 @@
+.blob path {
+  fill: var(--verde);
+}
+
+.top {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 5%;
+  left: 95%;
+  height: 600px;
+  z-index: -1;
+}
+
+.bottom {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: -60%;
+  left: 5%;
+  height: 600px;
+  z-index: -1;
+}

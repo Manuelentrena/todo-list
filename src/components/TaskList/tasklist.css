@@ -1,0 +1,41 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--naranja);
+  color: var(--blanco);
+  margin: 0;
+  width: 35vw;
+  height: 100vh;
+  padding: 0rem 5rem;
+  min-width: 400px;
+}
+
+.task__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--naranjalight);
+  margin: 2rem 0rem 0rem 0rem;
+  padding-bottom: 1rem;
+}
+
+.task__title {
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.task__counter {
+  font-size: 4rem;
+  margin: 0;
+}
+.task__design {
+  font-size: 3rem;
+  margin: 2rem 0rem 5rem 0rem;
+}
+
+.task__link {
+  color: var(--negrolight);
+  text-decoration: none;
+}

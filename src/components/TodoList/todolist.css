@@ -1,0 +1,11 @@
+.todo {
+  padding: 15rem 10rem;
+  width: 65vw;
+  position: relative;
+  overflow: hidden;
+}
+.todo__title {
+  color: var(--negro);
+  font-size: 4rem;
+  margin: 0;
+}
