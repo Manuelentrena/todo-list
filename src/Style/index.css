@@ -53,3 +53,9 @@ body {
   display: flex;
   overflow: hidden;
 }
+
+@media (max-width: 1120px) {
+  .app {
+    flex-direction: column-reverse;
+  }
+}

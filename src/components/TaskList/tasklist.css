@@ -1,13 +1,12 @@
 .tasks {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: var(--naranja);
   color: var(--blanco);
   margin: 0;
   width: 35vw;
   height: 100vh;
-  padding: 0rem 5rem;
+  /* padding: 0rem 5rem; */
   min-width: 400px;
   box-shadow: 9px 2px 9px -5px rgba(153, 153, 153, 0.75);
 }
@@ -17,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid var(--naranjalight);
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 2rem 2rem 2rem 2rem;
   padding-bottom: 1rem;
 }
 
@@ -32,21 +31,23 @@
   margin: 0;
 }
 .tasks__design {
-  font-size: 3rem;
+  font-size: 2.3rem;
   margin: 2rem 0rem 5rem 0rem;
+  background-color: var(--verde);
 }
 
 .tasks__link {
-  color: var(--negrolight);
+  color: var(--white);
   text-decoration: none;
 }
 
 .tasks__list {
   width: 100%;
-  height: 75%;
+  height: 100%;
   background-color: var(--naranjalight);
   overflow-y: scroll;
   background: linear-gradient(145deg, #e6c3a5, #ffe8c4);
+  padding: 0rem 1rem 2rem 1rem;
 }
 
 .tasks__list::-webkit-scrollbar {
@@ -63,4 +64,59 @@
   font-size: 2.5rem;
   text-align: center;
   color: var(--negrolight);
+}
+
+.tasks__footer {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 1;
+}
+
+.tasks__design {
+  height: auto;
+  width: 300px;
+  padding: 1rem 2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tasks__copy {
+  background-color: var(--negrolight);
+  border-top: 5px solid var(--naranja);
+}
+.tasks__copy-text {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 1120px) {
+  .tasks {
+    margin: 0;
+    width: 100%;
+    height: 900px;
+    min-width: 0;
+  }
+
+  .tasks__header {
+    margin: 2rem 2rem 2rem 2rem;
+  }
+  .tasks__title,
+  .tasks__counter {
+    font-size: 2.5rem;
+  }
+  .tasks__design {
+    font-size: 2rem;
+    margin: 3rem 0rem 1rem 0rem;
+  }
+  .tasks__footer {
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+
+  .tasks__design {
+    width: 220px;
+  }
 }

@@ -9,3 +9,16 @@
   font-size: 4rem;
   margin: 0;
 }
+
+.todo__subtitle {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+
+@media (max-width: 1120px) {
+  .todo {
+    padding: 10rem 2rem 5rem 2rem;
+    width: 100%;
+  }
+}

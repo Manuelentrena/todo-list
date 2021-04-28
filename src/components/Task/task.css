@@ -56,3 +56,13 @@
   background-color: var(--rojohover);
   cursor: pointer;
 }
+
+@media (max-width: 1120px) {
+  .task__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .task__header p {
+    margin: 0.5rem 0.2rem 0rem 0rem;
+  }
+}

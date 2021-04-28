@@ -44,4 +44,39 @@
   font-size: 2rem;
   color: var(--rojo);
   text-align: right;
+  background-color: var(--rojolight);
+}
+
+@media (max-width: 1120px) {
+  .form__block {
+    flex-direction: column;
+  }
+  .form__autor,
+  .form__date,
+  .form__description,
+  .form__time,
+  .form__name {
+    font-size: 2rem;
+    margin: 2rem 0.5rem;
+  }
+  .form__autor input,
+  .form__date input,
+  .form__description textarea,
+  .form__time input,
+  .form__name input {
+    padding: 1rem 3rem;
+    margin-top: 0.5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+  .form__description textarea {
+    height: 10rem;
+  }
+  .form__mesage {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .error {
+    text-align: center;
+  }
 }
