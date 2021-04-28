@@ -16,6 +16,7 @@
   --negro: #000000;
   --negrolight: #717171;
   --gray: #cbcbcb;
+  --white: #ffffff;
 }
 
 /* FUENTES */
@@ -30,7 +31,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {

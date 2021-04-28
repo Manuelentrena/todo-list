@@ -26,22 +26,22 @@
   height: 6rem;
   font-size: 2.5rem;
   width: 100%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .form__description textarea {
   height: 10rem;
 }
 
-/* .form__date {
+.form__mesage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
-.form__description {
+
+.error {
+  font-size: 2rem;
+  color: var(--rojo);
+  text-align: right;
 }
-.form__input {
-}
-.form__label {
-}
-.form__name {
-}
-.form__time {
-} */

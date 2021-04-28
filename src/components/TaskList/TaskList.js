@@ -1,22 +1,29 @@
 import React from "react";
-import List from "../List/List";
+import Task from "../Task/Task";
 import "./tasklist.css";
 
-const TaskList = () => {
+const TaskList = ({ tasks, deleteTask }) => {
+  /* Mensaje si no hay tareas */
+  const banner = tasks.length === 0 ? "Agrega una Tarea" : null;
   return (
-    <div className="task">
-      <div className="task__header">
-        <h2 className="task__title">TASK LIST</h2>
-        <p className="task__counter">0</p>
+    <div className="tasks">
+      <div className="tasks__header">
+        <h2 className="tasks__title">TASK LIST</h2>
+        <p className="tasks__counter">{tasks.length}</p>
       </div>
 
-      <List />
+      <div className="tasks__list">
+        <h2 className="tasks__banner">{banner}</h2>
+        {tasks.map((task) => {
+          return <Task task={task} key={task.id} deleteTask={deleteTask} />;
+        })}
+      </div>
 
-      <div className="task__footer">
-        <p className="task__design">
+      <div className="tasks__footer">
+        <p className="tasks__design">
           Design by{" "}
           <a
-            className="task__link"
+            className="tasks__link"
             href="https://www.instagram.com/manuel_entrena/"
           >
             @Manuel_Entrena
